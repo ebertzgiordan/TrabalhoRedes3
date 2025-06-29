@@ -18,7 +18,7 @@ public class ServerUDP {
     public static void main(String[] args) {
         try {
             // Carrega os dados iniciais do arquivo JSON
-            carregarConfiguracao("C:\\Users\\ebert\\OneDrive\\Documentos\\NetBeansProjects\\TrabalhoRedes3\\src\\trabalhoredes3/dispositivos.json");
+            carregarConfiguracao("src/trabalhoredes3/dispositivos.json");
 
 
             int porta = 9876;
@@ -80,7 +80,7 @@ public class ServerUDP {
                         resposta.put("cmd", "set_resp");
                         resposta.put("locate", local);
 
-                        if (local.startsWith("actuator_")) {
+                        if (local.startsWith("atuator_")) {
                             if (dispositivos.containsKey(local)) {
                                 dispositivos.put(local, valor);
                                 resposta.put("value", valor);
@@ -88,7 +88,7 @@ public class ServerUDP {
                                 resposta.put("value", "dispositivo não encontrado");
                             }
                         } else {
-                            resposta.put("value", "erro: apenas actuators podem ser alterados");
+                            resposta.put("value", "erro: apenas atuadores podem ser alterados");
                         }
                         break;
 

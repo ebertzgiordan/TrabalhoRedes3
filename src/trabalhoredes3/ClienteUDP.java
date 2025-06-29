@@ -9,7 +9,8 @@ import org.json.JSONArray;
 
 /**
  * Cliente UDP com interface gráfica simples usando JOptionPane.
- * Envia comandos ao servidor e exibe os resultados formatados.
+ * Envia comandos ao servidor e exibe 
+ * os resultados formatados.
  */
 public class ClienteUDP {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 {
-  "actuator_light_meetroom": "off",
-  "sensor_airtemp_meetroom": 22.3,
-  "sensor_airhumid_meetroom": 55.0,
-  "actuator_airtemp_guarita": 23.0,
-  "actuator_air_guarita": "on"
+    "sensor_artemp_meetroom": 20.0,
+    "sensor_arhumid_meetroom": 20.0,
+    "atuador_artemp_guarita": 20.0,
+    "atuador_ar_guarita": "off",
+    "atuador_light_meetroom": "off"
 }
